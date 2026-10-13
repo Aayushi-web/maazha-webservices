@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maazha Consultancy Services — Empowering Businesses." />
+  <title>Maazha Consultancy Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo" id="navLogo">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <polygon points="16,2 30,26 2,26" stroke="url(#g1)" stroke-width="2" fill="none"/>
+            <polygon points="16,8 26,24 6,24" fill="url(#g2)" opacity="0.25"/>
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#4F8EF7"/>
+                <stop offset="100%" stop-color="#00F5FF"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#4F8EF7"/>
+                <stop offset="100%" stop-color="#00F5FF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Maazha</span>
+          <span class="logo-sub">Consultancy Services</span>
+          <span class="logo-tagline">Empowering Businesses</span>
+        </div>
+      </a>
+
+      <!-- Nav Right -->
+      <nav class="nav-right" id="navRight">
+        <a class="nav-link" href="#industries">Industries</a>
+        <a class="nav-link" href="#capability">Our Capability</a>
+        <a class="nav-link" href="#home">AI with MCS</a>
+        <a class="nav-link" href="#insight">Insight</a>
+        <a class="nav-link" href="#about-us">About Us</a>
+
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       PRICING POPUP PANEL (below navbar)
+  ═══════════════════════════════════════════ -->
+  <div class="pricing-panel" id="pricingPanel" aria-hidden="true">
+    <div class="pricing-panel-inner">
+      <div class="pp-header">
+        <h3>Simple, Transparent Pricing</h3>
+        <p>No hidden fees. Cancel anytime.</p>
+        <button class="pp-close" id="pricingClose" aria-label="Close pricing">✕</button>
+      </div>
+      <div class="pp-cards">
+
+        <div class="pp-card">
+          <div class="pp-plan">Starter</div>
+          <div class="pp-price"><span class="pp-currency">$</span>29<span class="pp-period">/mo</span></div>
+          <ul class="pp-features">
+            <li>✓ 1 Web Application</li>
+            <li>✓ 5 GB Cloud Storage</li>
+            <li>✓ Basic Analytics</li>
+            <li>✓ Email Support</li>
+            <li class="off">✗ API Access</li>
+          </ul>
+          <a href="#" class="pp-btn">Get Started</a>
+        </div>
+
+        <div class="pp-card featured">
+          <div class="pp-badge">Most Popular</div>
+          <div class="pp-plan">Pro</div>
+          <div class="pp-price"><span class="pp-currency">$</span>79<span class="pp-period">/mo</span></div>
+          <ul class="pp-features">
+            <li>✓ 5 Web Applications</li>
+            <li>✓ 50 GB Cloud Storage</li>
+            <li>✓ Advanced Analytics</li>
+            <li>✓ Priority Support</li>
+            <li>✓ Full API Access</li>
+          </ul>
+          <a href="#" class="pp-btn primary">Get Started</a>
+        </div>
+
+        <div class="pp-card">
+          <div class="pp-plan">Enterprise</div>
+          <div class="pp-price custom">Custom</div>
+          <ul class="pp-features">
+            <li>✓ Unlimited Apps</li>
+            <li>✓ Unlimited Storage</li>
+            <li>✓ Custom Analytics</li>
+            <li>✓ 24/7 Dedicated Support</li>
+            <li>✓ Custom Infrastructure</li>
+          </ul>
+          <a href="#" class="pp-btn">Contact Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for closing -->
+  <!-- Interactive Grid Background -->
+  <div class="grid-bg" id="gridBg"></div>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-container">
+
+        <!-- Headline -->
+        <div class="hero-headline-wrap reveal">
+          <h1 class="hero-headline">
+            Build a <span class="hl-grad">future-ready</span> business powered by
+            <span class="hl-cyan">AI,</span> <span class="hl-blue">automation</span>
+            and <span class="hl-purple">digital infrastructure</span> that scales.
+          </h1>
+        </div>
+
+        <!-- Split Row -->
+        <div class="hero-split">
+
+          <!-- Left: Animated Demo -->
+          <div class="hero-left reveal reveal-left">
+            <div class="demo-frame">
+              <div class="demo-chrome">
+                <span class="chrome-dot c-red"></span>
+                <span class="chrome-dot c-yellow"></span>
+                <span class="chrome-dot c-green"></span>
+                <div class="chrome-url">app.maazha.io / dashboard</div>
+              </div>
+              <div class="demo-screen">
+                <div class="ds-header">
+                  <span class="ds-title">Live Analytics</span>
+                  <div class="ds-badges">
+                    <span class="ds-badge green">● Active</span>
+                    <span class="ds-badge blue">AI On</span>
+                  </div>
+                </div>
+                <div class="ds-stats">
+                  <div class="ds-stat"><span class="ds-num">98</span><span class="ds-unit">%</span><span class="ds-label">Uptime</span></div>
+                  <div class="ds-stat"><span class="ds-num">2.4</span><span class="ds-unit">K</span><span class="ds-label">Req/s</span></div>
+                  <div class="ds-stat"><span class="ds-num">47</span><span class="ds-unit">ms</span><span class="ds-label">Latency</span></div>
+                </div>
+                <div class="ds-chart">
+                  <div class="ds-bar" style="--h:45%"></div>
+                  <div class="ds-bar" style="--h:62%"></div>
+                  <div class="ds-bar" style="--h:38%"></div>
+                  <div class="ds-bar" style="--h:80%"></div>
+                  <div class="ds-bar" style="--h:55%"></div>
+                  <div class="ds-bar" style="--h:90%"></div>
+                  <div class="ds-bar" style="--h:70%"></div>
+                  <div class="ds-bar" style="--h:95%"></div>
+                </div>
+                <div class="ds-rows">
+                  <div class="ds-row"><div class="ds-dot"></div><div class="ds-line long"></div><span class="ds-chip ok">✓</span></div>
+                  <div class="ds-row"><div class="ds-dot p"></div><div class="ds-line med"></div><span class="ds-chip ai">AI</span></div>
+                  <div class="ds-row"><div class="ds-dot"></div><div class="ds-line long"></div><span class="ds-chip ok">✓</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-tag ft1">⚡ AI Powered</div>
+            <div class="float-tag ft2">🚀 99.9% Uptime</div>
+          </div>
+
+          <!-- Right: Text + Buttons -->
+          <div class="hero-right reveal reveal-right">
+            <p class="hero-body">
+              <strong>Maazha Web Services</strong> helps your business build its
+              <span class="hl-cyan">digital presence.</span> We help transform
+              your website, workflow and operations with
+              <span class="hl-blue">AI‑powered technology</span> and
+              <span class="hl-purple">intelligent automation.</span>
+            </p>
+            <div class="hero-ctas">
+              <a href="tel:+918697839098" class="btn-book" id="bookCallBtn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.21 2.36 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.66-.66a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                Book a Call
+              </a>
+              <a href="#" class="btn-demo" id="seeDemoBtn">
+                <span class="demo-ring"></span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                See Demo
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="capability">
+      <div class="services-shell agent-services-shell reveal">
+        <div class="agent-showcase">
+          <div class="agent-mascot-card">
+            <span class="mascot-spark spark-one"></span>
+            <span class="mascot-spark spark-two"></span>
+            <span class="mascot-spark spark-three"></span>
+            <svg class="agent-mascot" viewBox="0 0 280 250" role="img" aria-labelledby="mascotTitle mascotDescription">
+              <title id="mascotTitle">Maazha AI assistant</title>
+              <desc id="mascotDescription">A friendly blue and cyan robot assistant with a smiling face.</desc>
+              <defs>
+                <linearGradient id="botBody" x1="72" y1="140" x2="208" y2="226" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#4F8EF7" />
+                  <stop offset="1" stop-color="#00F5FF" />
+                </linearGradient>
+                <linearGradient id="botFace" x1="90" y1="65" x2="190" y2="155" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#CFFBFF" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="140" cy="226" rx="73" ry="12" fill="#4F8EF7" opacity=".16" />
+              <path d="M140 35V52" stroke="#00F5FF" stroke-width="8" stroke-linecap="round" />
+              <circle cx="140" cy="27" r="11" fill="#00F5FF" />
+              <path d="M77 177 62 190c-7 6-6 17 1 22 6 5 15 4 20-2l15-17M203 177l15 13c7 6 6 17-1 22-6 5-15 4-20-2l-15-17" fill="#101A35" stroke="#4F8EF7" stroke-width="5" stroke-linecap="round" />
+              <path d="M104 145h72c20 0 36 16 36 36v20c0 9-7 16-16 16H84c-9 0-16-7-16-16v-20c0-20 16-36 36-36Z" fill="url(#botBody)" stroke="#79B8FF" stroke-width="3" />
+              <rect x="84" y="49" width="112" height="111" rx="37" fill="#111A35" stroke="#4F8EF7" stroke-width="5" />
+              <rect x="96" y="62" width="88" height="78" rx="28" fill="url(#botFace)" />
+              <ellipse cx="120" cy="98" rx="6" ry="9" fill="#2563EB" />
+              <ellipse cx="160" cy="98" rx="6" ry="9" fill="#2563EB" />
+              <path d="M124 116c8 10 24 10 32 0" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round" />
+              <circle cx="108" cy="111" r="5" fill="#00F5FF" opacity=".62" />
+              <circle cx="172" cy="111" r="5" fill="#00F5FF" opacity=".62" />
+              <rect x="129" y="171" width="22" height="9" rx="4.5" fill="#FFFFFF" opacity=".92" />
+              <circle cx="118" cy="195" r="4" fill="#FFFFFF" opacity=".9" />
+              <circle cx="140" cy="195" r="4" fill="#FFFFFF" opacity=".9" />
+              <circle cx="162" cy="195" r="4" fill="#FFFFFF" opacity=".9" />
+              <path d="m48 77 5 10 10 5-10 5-5 10-5-10-10-5 10-5 5-10Z" fill="#00F5FF" />
+              <path d="m225 93 4 8 8 4-8 4-4 8-4-8-8-4 8-4 4-8Z" fill="#4F8EF7" />
+            </svg>
+            <span class="mascot-caption"><span class="agent-status-dot"></span> MAAZHA AI AGENT <span class="agent-live">ONLINE</span></span>
+          </div>
+          <div class="agent-intro">
+            <p class="eyebrow">AI agent</p>
+            <h2>Your friendly AI partner for everyday business</h2>
+            <p>Meet an AI agent that brings your tools and information together, handles repetitive work, and turns business data into clear next steps, with your team in control.</p>
+          </div>
+        </div>
+
+        <div class="service-offerings">
+          <div class="offerings-heading">
+            <p class="eyebrow">What we provide</p>
+            <h2>AI, automation, and digital services for business growth</h2>
+          </div>
+          <div class="service-card-grid">
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">01</span><h3>Business automation</h3>
+              <p class="service-summary">Less busywork. Better-connected operations.</p>
+              <p class="service-detail">We map repetitive processes and connect your tools to automate tasks such as approvals, reporting, and customer follow-ups, while keeping your team in control.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">02</span><h3>Data analysis</h3>
+              <p class="service-summary">Make your business data easier to act on.</p>
+              <p class="service-detail">We organize information from your business, surface useful patterns, and create clear dashboards and reports to support confident day-to-day decisions.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">03</span><h3>Custom apps</h3>
+              <p class="service-summary">Web and mobile tools shaped to your workflow.</p>
+              <p class="service-detail">From early product planning to launch, we build responsive web and mobile applications with the features, integrations, and user experience your team needs.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">04</span><h3>Marketing intelligence</h3>
+              <p class="service-summary">Know your audience and spot opportunities.</p>
+              <p class="service-detail">We bring audience, competitor, and campaign signals into focus so you can understand what is working and choose where to invest next.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">05</span><h3>Digital marketing</h3>
+              <p class="service-summary">Reach the right people with measurable campaigns.</p>
+              <p class="service-detail">We help plan and improve SEO, content, and paid campaigns, connecting each activity to meaningful measures such as qualified leads and conversions.</p>
+            </article>
+            <article class="service-card" tabindex="0">
+              <span class="offering-number">06</span><h3>Technology services</h3>
+              <p class="service-summary">The practical tech support to keep you moving.</p>
+              <p class="service-detail">We advise on technology choices, set up and connect platforms, and provide ongoing support to keep your digital tools dependable as you grow.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section reveal">
+      <div class="stats-heading">
+        <h2>Trusted by ambitious businesses</h2>
+      </div>
+      <div class="stats-panel">
+        <div class="stat-item">
+          <div class="stat-value">144+</div>
+          <div class="stat-label">B2B websites launched</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">50%</div>
+          <div class="stat-label">increase in demo requests</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">60%</div>
+          <div class="stat-label">increase in user engagement</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section reveal" id="process">
+      <div class="process-shell">
+        <div class="process-heading">
+          <p class="eyebrow">Our process</p>
+          <h2>A clear path from your idea to real impact</h2>
+          <p>You stay involved at every milestone, from the first conversation through launch and what comes next.</p>
+        </div>
+
+        <div class="process-flow">
+          <article class="process-step step-one">
+            <div class="process-step-heading">
+              <div><span>PHASE 01</span><h3>Understand your business</h3></div>
+              <strong>1</strong>
+            </div>
+            <p>In a kickoff, we map your customers, tools, workflows, and pain points, then agree on the problem and how success will be measured.</p>
+          </article>
+
+          <svg class="process-arrow arrow-one" viewBox="0 0 140 120" aria-hidden="true">
+            <path d="M7 10c73-8 120 31 108 87" />
+            <path d="m98 80 16 18 15-20" />
+          </svg>
+
+          <article class="process-step step-two">
+            <div class="process-step-heading">
+              <div><span>PHASE 02</span><h3>Agree on the right plan</h3></div>
+              <strong>2</strong>
+            </div>
+            <p>We recommend the right AI, automation, app, or marketing solution, then agree on scope, milestones, timeline, and responsibilities before work begins.</p>
+          </article>
+
+          <svg class="process-arrow arrow-two" viewBox="0 0 140 120" aria-hidden="true">
+            <path d="M132 10C59 2 14 40 27 96" />
+            <path d="m12 78 16 20 16-18" />
+          </svg>
+
+          <article class="process-step step-three">
+            <div class="process-step-heading">
+              <div><span>PHASE 03</span><h3>Create it together</h3></div>
+              <strong>3</strong>
+            </div>
+            <p>We design and build in milestones, share working previews, and use your feedback to shape features, integrations, and workflows.</p>
+          </article>
+
+          <svg class="process-arrow arrow-three" viewBox="0 0 140 120" aria-hidden="true">
+            <path d="M7 10c73-8 120 31 108 87" />
+            <path d="m98 80 16 18 15-20" />
+          </svg>
+
+          <article class="process-step step-four">
+            <div class="process-step-heading">
+              <div><span>PHASE 04</span><h3>Test, refine &amp; approve</h3></div>
+              <strong>4</strong>
+            </div>
+            <p>Your team tests real scenarios across devices and integrations. We resolve issues, refine the details, and get your approval before launch.</p>
+          </article>
+
+          <svg class="process-arrow arrow-four" viewBox="0 0 140 120" aria-hidden="true">
+            <path d="M132 10C59 2 14 40 27 96" />
+            <path d="m12 78 16 20 16-18" />
+          </svg>
+
+          <article class="process-step step-five">
+            <div class="process-step-heading">
+              <div><span>PHASE 05</span><h3>Launch &amp; keep improving</h3></div>
+              <strong>5</strong>
+            </div>
+            <p>We deploy, document, and guide your team through handoff. Together, we track results, provide support, and plan improvements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section reveal" id="industries">
+      <div class="comparison-shell">
+        <div class="comparison-heading">
+          <p class="eyebrow">Why choose MCS</p>
+          <h2>Why choose MCS over 1,000 other agencies</h2> 
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th>MCS</th>
+                <th>Traditional Agencies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Consultative Approach</td>
+                <td>We act as a partner and co-own the result.</td>
+                <td>They build what is requested, even when the story does not add up.</td>
+              </tr>
+              <tr>
+                <td>Service Style</td>
+                <td>Premium service with senior-led craft and clear ownership.</td>
+                <td>Often packaged as deliverables with limited senior time.</td>
+              </tr>
+              <tr>
+                <td>Focus</td>
+                <td>Built for mid-market and enterprise buyers with complex cycles.</td>
+                <td>Built for mixed client sizes, enterprise nuance can get missed.</td>
+              </tr>
+              <tr>
+                <td>Strategy</td>
+                <td>Result-oriented with measurable outcomes like demos and lead quality.</td>
+                <td>“Looks great” is often the finish line.</td>
+              </tr>
+              <tr>
+                <td>Messaging</td>
+                <td>In-house PMM team drives positioning and messaging early.</td>
+                <td>Copy or strategy is often outsourced or added later.</td>
+              </tr>
+              <tr>
+                <td>Industry Expertise</td>
+                <td>100% B2B-first thinking tailored to evaluation-led buying.</td>
+                <td>Generalist exposure; B2B is one of many.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section reveal" id="insight">
+      <div class="testimonial-shell">
+        <div class="testimonial-heading">
+          <p class="eyebrow">What our clients say</p>
+          <h2>What our customers say</h2>
+          <p>Thoughtful partnerships. Work that makes a difference.</p>
+          <button class="testimonial-view-more" id="viewMoreClients" type="button" aria-expanded="false" aria-controls="testimonialCards">
+            <span class="testimonial-view-more-label">View More</span><span class="testimonial-view-more-icon" aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <div class="testimonial-cards" id="testimonialCards">
+          <article class="testimonial-card">
+            <div class="testimonial-photo" aria-label="Client photo placeholder">KJ</div>
+            <div class="testimonial-content">
+              <p>“MWS helped us turn our ideas into a polished digital experience that immediately improved trust and conversions.”</p>
+              <div class="testimonial-author">
+                <strong>Kumar Jadhav</strong>
+                <span>Founder, S—Tech Sales</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-photo" aria-label="Client photo placeholder">SS</div>
+            <div class="testimonial-content">
+              <p>“Their process felt strategic from day one, and the final product exceeded expectations on both design and performance.”</p>
+              <div class="testimonial-author">
+                <strong>Shivendra Singh</strong>
+                <span>Founder, Shivraj Homes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card extra-client-card" hidden>
+            <div class="testimonial-photo" aria-label="Client photo placeholder">AP</div>
+            <div class="testimonial-content">
+              <p>“Professional, sharp, and incredibly thoughtful. Every detail was crafted with our growth goals in mind.”</p>
+              <div class="testimonial-author">
+                <strong>Avinash Pandey</strong>
+                <span>Founder, Sreeja Financials</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section reveal" id="about-us">
+      <div class="contact-shell">
+        <div class="contact-intro">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Let’s build something remarkable together</h2>
+          <p>Tell us about your idea, your goals, or the challenges you’re solving. We’ll get back to you with a thoughtful next step.</p>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/info@maazha.com" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry from Maazha Web Services" />
+          <input type="hidden" name="_template" value="table" />
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+            <input type="email" name="email" placeholder="Your email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <input type="text" name="company" placeholder="Company name" autocomplete="organization" />
+            <input type="text" name="project_type" placeholder="Project type" />
+          </div>
+          <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">MWS</span>
+        <p>Building thoughtful digital experiences for ambitious brands.</p>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>Conversion Rate Optimization</li>
+            <li>Fintech Branding</li>
+            <li>B2B Branding</li>
+            <li>Webflow Migration</li>
+            <li>Figma to Webflow</li>
+            <li>Webflow Maintenance</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul>
+            <li>SaaS</li>
+            <li>B2B</li>
+            <li>FinTech</li>
+            <li>Venture Capital</li>
+            <li>Artificial Intelligence</li>
+            <li>HRtech</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li>Blog</li>
+            <li>Guides</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li>Work</li>
+            <li>Wall of Love</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <span>hello@maazha.com</span>
+        <span>© 2026 Maazha</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/918697839098?text=Hello%20Maazha%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with Maazha on WhatsApp at +91 86978 39098">
+    <span class="whatsapp-float-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.8a8.2 8.2 0 1 1 16-3.5Z" />
+        <path d="M8.5 8.3c.4 2.7 2.5 4.8 5.2 5.2l1.1-1.1 2 .8c-.2 1.2-1.2 2-2.5 1.9-3.8-.4-7-3.6-7.4-7.4-.1-1.3.7-2.3 1.9-2.5l.8 2-1.1 1.1Z" />
+      </svg>
+    </span>
+    <span class="whatsapp-float-copy"><strong>WhatsApp</strong><span>+91 86978 39098</span></span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
